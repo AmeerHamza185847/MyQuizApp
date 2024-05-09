@@ -3,7 +3,7 @@ let stdDatabase = JSON.parse(localStorage.getItem("studentData")) || [];
 
 // let userScore = JSON.parse(localStorage.getItem("score")) || null;
 let addStudent = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     let stdName = document.querySelector("#stdName").value;
     let stdRollNo = document.querySelector("#stdRollNo").value;
     let stdBath = document.querySelector("#stdBath").value;
@@ -20,6 +20,9 @@ let addStudent = (e) => {
     console.log("detail", studentDetail);
     console.log("database", stdDatabase);
     localStorage.setItem("studentData", JSON.stringify(stdDatabase));
+
+    let quizbtn = document.querySelector("#quizbtn");
+    quizbtn.removeAttribute('disabled');
 
 }
 
