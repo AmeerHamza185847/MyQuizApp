@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+.studentDetails{
+    width: 50%;
+    margin: auto;
+    padding: 1em 2em;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.studentDetails #userName, #userRoll,#userBatch,#userSection,#userScore{
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}

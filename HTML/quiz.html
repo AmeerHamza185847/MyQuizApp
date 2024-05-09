@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/quiz.css">
+    <title>quiz page</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span class="instituteName">SAYLANI :</span> <span class="quizName"> HTML5 Quiz</span>
+            <div class="ruler"></div>
+        </h1>
+    </header>
+    <section class="timerSection">
+        <div id="questionTimer"></div>
+    </section>
+
+    <section class="quizSection">
+        <div>
+            <p id="title"></p>
+            <div class="choice">
+                <label for="one">
+                    <input type="radio" name="answer" id="one" value="1" onclick="enableNextButton()">
+                    <span id="option1"></span>
+                </label>
+
+            </div>
+
+            <div class="choice">
+                <label for="two">
+                    <input type="radio" name="answer" id="two" value="2" onclick="enableNextButton()">
+                    <span id="option2"></span>
+                </label>
+
+            </div>
+
+            <div class="choice">
+                <label for="three">
+                    <input type="radio" name="answer" id="three" value="3" onclick="enableNextButton()">
+                    <span id="option3"></span>
+                </label>
+
+            </div>
+
+        </div>
+        <button id="next" disabled>Next</button>
+    </section>
+
+
+    <script src="../JAVASCRIPT/quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
